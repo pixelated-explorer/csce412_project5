@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexsoft Sponsors</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .sponsor-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .sponsor-block {
+      border-radius: var(--radius-lg);
+      padding: 22px 20px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .sponsor-1 {
+      background: radial-gradient(circle at top left, #2b151c 0, #111217 60%);
+    }
+
+    .sponsor-2 {
+      background: radial-gradient(circle at top, #141a2b 0, #111217 60%);
+    }
+
+    .sponsor-3 {
+      background: radial-gradient(circle at top right, #1f222a 0, #111217 60%);
+    }
+
+    .sponsor-block h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .sponsor-block p {
+      margin: 0 0 8px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .sponsor-tagline {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="index.html" class="nav-home-link">
+          <img src="logo.png" alt="Nexsoft Tech Solutions logo" class="logo" />
+          <span class="brand-name">Nexsoft Tech Solutions</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="jobs.html" class="nav-link">Jobs</a>
+        <a href="sponsors.html" class="nav-link">Sponsors</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Our trusted sponsors</h1>
+      <button class="primary-btn" id="cta-btn">
+        Meet our sponsors
+      </button>
+      <p class="hero-note">Sponsor page</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="sponsors" class="section">
+      <h2>Featured</h2>
+
+      <div class="sponsor-blocks">
+        <article class="sponsor-block sponsor-1">
+          <div class="sponsor-tagline">Finance</div>
+          <h3>eQuant solutions</h3>
+          <p>
+            Investment firm focused on maintainable tech stacks and real time analytics. 
+          </p>
+        </article>
+
+        <article class="sponsor-block sponsor-2">
+          <div class="sponsor-tagline">Healthcare | Centralization</div>
+          <h3>Helixbase Medical networks</h3>
+          <p>
+            An allied clinic group centralizing resources for research and 
+            centralized workflows. 
+          </p>
+        </article>
+
+        <article class="sponsor-block sponsor-3">
+          <div class="sponsor-tagline">R&amp;D · Prototypes to production</div>
+          <h3>SkyHigh Labs</h3>
+          <p>
+            Group collaborating with NexSoft for providing 
+            solutions to interdisciplinary domains. 
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="partner" class="section section-alt">
+      <h2>What it means to work with us</h2>
+      <p>
+        Our sponsor group is small but growing.
+      </p>
+      <p>
+        We work with sponsors to review system design and decisions for long-term solutions. 
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nexsoft Tech Solutions</p>
+  </footer>
+
+  <script>
+    const ctaBtn = document.getElementById("cta-btn");
+    const sponsorsSection = document.getElementById("sponsors");
+
+    if (ctaBtn && sponsorsSection) {
+      ctaBtn.addEventListener("click", () => {
+        sponsorsSection.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexsoft Reviews</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .review {
+      background-color: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 16px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      font-size: 0.92rem;
+    }
+
+    .review-text {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .review-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .review-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .rating {
+      font-size: 0.85rem;
+      color: var(--accent-soft);
+      margin-bottom: 6px;
+    }
+
+    .nav-home-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="index.html" class="nav-home-link">
+          <img src="logo.png" alt="Nexsoft Tech Solutions logo" class="logo" />
+          <span class="brand-name">Nexsoft Tech Solutions</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="jobs.html" class="nav-link">Jobs</a>
+        <a href="sponsors.html" class="nav-link">Sponsors</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>What teams are saying</h1>
+      <p>
+        We have ratings from teams who have worked with us in both the short and long term. 
+      </p>
+      <button class="primary-btn" id="cta-btn">
+        Client feedback
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="reviews" class="section">
+      <h2>What clients say</h2>
+      <div class="reviews-grid">
+        <article class="review">
+          <div class="rating">★★★★★ | Refactoring stack</div>
+          <p class="review-text">
+            "Nexsoft helped us in dealing with our reporting stack and 
+            managed to effortlessly convert it into containers."
+          </p>
+          <div class="review-name">John P.</div>
+          <div class="review-meta">eQuant solutions</div>
+        </article>
+
+        <article class="review">
+          <div class="rating">★★★★★ | Cloud migration</div>
+          <p class="review-text">
+            "We focused on what mattered rather than complicated tools, which we really appreciated."
+          </p>
+          <div class="review-name">Casey M.</div>
+          <div class="review-meta">Helixbase Medical networks</div>
+        </article>
+
+        <article class="review">
+          <div class="rating">★★★★☆ | MVP</div>
+          <p class="review-text">
+            "We finished an MVP in weeks! There's more work to be done, but we are happy so far"
+          </p>
+          <div class="review-name">Sarah M.</div>
+          <div class="review-meta">SkyHigh Labs</div>
+        </article>
+
+        <article class="review">
+          <div class="rating">★★★★★ | DevOps consulting</div>
+          <p class="review-text">
+            "We actually understand how our new pipeline is structured with great documentation!"
+          </p>
+          <div class="review-name">Anonymous</div>
+          <div class="review-meta">SkyHigh Labs</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="principles" class="section section-alt">
+      <h2>Goals for our clients</h2>
+      <p>
+        One of our main focuses involved actually working with the team and 
+        reviewing our current resources before offering any new tech. 
+      </p>
+      <p>
+        We outline steps to solutions and always ensure to leave our clients 
+        with extensive documentation. 
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nexsoft Tech Solutions</p>
+  </footer>
+
+  <script>
+    const ctaBtn = document.getElementById("cta-btn");
+    const reviewsSection = document.getElementById("reviews");
+
+    if (ctaBtn && reviewsSection) {
+      ctaBtn.addEventListener("click", () => {
+        reviewsSection.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  </script>
+</body>
+</html>
